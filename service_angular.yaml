@@ -6,8 +6,8 @@ metadata:
     app.kubernetes.io/name: angular
     app.kubernetes.io/component: frontend
 spec:
-  type: LoadBalancer
-  # type: ClusterIP
+  # type: LoadBalancer
+  type: ClusterIP
   ports:
   - port: 4200
     targetPort: 4200
