@@ -9,8 +9,9 @@ spec:
   # type: LoadBalancer
   type: ClusterIP
   ports:
-  - port: 80
+  - name: http
     targetPort: 4200
+    port: 80
   selector:
     app.kubernetes.io/name: angular
     app.kubernetes.io/component: frontend
